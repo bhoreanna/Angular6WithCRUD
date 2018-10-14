@@ -1,0 +1,39 @@
+<div *ngIf="isLoginError" class="red text center error-message">
+    <i class="material-icon">error</i>
+</div>
+<form class="col s12 white" #UserLoginForm="ngForm" (ngSubmit)="onLoginSubmit()">
+    <div class="row">
+        <div class="input-field col s12">
+            <i class="material-icons prefix">account_circle</i>
+            <!--  <input type="text " [(ngModel)]="user.userName " name="UserName " placeholder="UserName ">-->
+            <input class="validate" type="text" name="userName" [(ngModel)]="user.userName" placeholder="UserName " required>
+
+        </div>
+    </div>
+
+    <div class="row ">
+        <div class="input-field col s12 ">
+            <i class="material-icons prefix ">vpn_key</i>
+            <!-- <input type="password " [(ngModel)]="user.password " name="Password " placeholder="Password ">-->
+            <input class="validate" type="password" name="Password" [(ngModel)]="user.password" placeholder="Password " required>
+
+        </div>
+    </div>
+
+    <div class="row ">
+        <div class="input-field col 12 ">
+
+            <button type="submit " class="btn-large btn-submit ">Submit</button>
+
+        </div>
+        <div class="input-field col 12 " *ngIf="islogin">
+
+            <mat-spinner></mat-spinner>
+
+        </div>
+    </div>
+
+
+
+
+</form>

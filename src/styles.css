@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+/* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+div.sm-jombotron {
+    margin: 0px;
+    padding: 2rem;
+    background-color: aqua;
+    color: antiquewhite
+}
+
+button.btn-submit {
+    background-color: #38547b;
+    color: #ffff;
+    width: 100%;
+}
+
+button.btn-submit:focus,
+button.btn.submit:hover {
+    background-color: #7b3843;
+}
+
+
+/*
+input.ng-invalid.ng-dirty {
+    border-bottom-color: #e91e63 !importent;
+    box-shadow: 1px 0 0 #e91e63 !importent;
+}*/
+
+.tabs {
+    height: 65px;
+}
+
+.tabs.tab {
+    text-transform: none;
+    line-height: 65px;
+    height: 65px;
+}
+
+.tabs.tab.a {
+    font-size: 25px;
+    color: gray;
+}
+
+tabs.tabs.tab.a.active {
+    background-color: #fff;
+}

@@ -1,0 +1,41 @@
+<html>
+
+<body>
+    <button md-fab md-tooltip="Show User" (click)=" userList()">Show User
+
+  </button>
+
+    <h1 align="center" id=title>All User Data</h1>
+    <!-- <div *ngIf="flag">-->
+    <div>
+        <table id="user" border="2" width="50%" cellpadding="2">
+            <tr>
+                <th>UserName</th>
+                <th>Password</th>
+                <th>Email</th>
+                <th>firstName</th>
+                <th>LastName</th>
+                <th>Operation</th>
+            </tr>
+
+
+
+            <tr *ngFor="let user of users">
+                <!--|upperStr-->
+                <td><a [routerLink]="['/home/userDetials',user.userName]"> {{ user.userName }}</a></td>
+                <td> {{ user.password }}</td>
+                <td> {{ user.email }}</td>
+                <td> {{ user.firstName }}</td>
+                <td> {{ user.lastName }}</td>
+
+                <td><button class="btn btn-danger" (click)="deleteUser(user)">Delete</button>
+                    <button class="btn btn-primary" (click)="updateUser(user)">Edit</button>
+
+                </td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+
+</html>

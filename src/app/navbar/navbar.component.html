@@ -1,0 +1,46 @@
+<form>
+    <!--
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <a class="navbar-brand">Angular6</a>
+            <ul class="navbar navbar-nav">
+                <li>
+
+                    <a>Home</a>
+                </li>
+
+
+            </ul>
+        </div>
+    </nav>
+  -->
+
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">
+                <i class="material-icons prefix ">vpn_key</i>User Management</a>
+            <a href="#" class="brand-logo right">
+                <h5>{{msg}}</h5>
+            </a>
+
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li>
+
+                    <a routerLink='/home/userList' routerLinkActive='active'>Show_User_List</a>
+                </li>
+                <li>
+                    <a routerLink='/home/newUser' routerLinkActive='active'>Add New User</a>
+                </li>
+                <li>
+                    <a routerLink='/home/customer' routerLinkActive='active'>Add Customer</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="icon icon-ic_play-circle_outline_black_24dp">
+
+        </div>
+
+    </nav>
+</form>
